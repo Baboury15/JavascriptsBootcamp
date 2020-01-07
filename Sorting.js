@@ -1,16 +1,16 @@
 const Array = [{
-    title: 'work',
+    title: 'zoom',
     body: ' im at work right now'
 },{
-title: 'health',
+title: 'xhealth',
 body: ' everyone need health insurance'
 
 },{
- title: 'Food',
+ title: 'BFood',
  body: 'Im going to eat some good food today'
 
 },{
-    title: ' sport',
+    title: ' Asport',
     body: ' i love footbal arsenal , aigle of Mali'
 }]
 
@@ -20,7 +20,7 @@ const  NewArraySorted = Array.sort(( a, b) =>{
         return -1;
 
     }
-    if (b.title.toLowerCase()< a.title.toLowerCase()){
+      if (b.title.toLowerCase()< a.title.toLowerCase()){
         return 1;
     }
     else{
@@ -28,3 +28,43 @@ const  NewArraySorted = Array.sort(( a, b) =>{
     }
 });
 console.log(NewArraySorted)
+
+
+console.log('///////////////////')
+console.log('///////////////////')
+
+console.log('//////////////////')
+
+
+/// challenges exercice
+
+const tasks =[{
+    title: 'Homework',
+    completed: true 
+    },
+{
+    title: 'exrcice',
+    completed:false
+},
+{
+    title:'shopping',
+    completed: true
+
+},
+{
+    title: 'cleaning',
+    completed: false
+
+}]
+
+const SortingTaskCompleted = tasks.sort((a,b)=>{
+
+    if (!(a.completed ) || (b.completed)){
+        return -1;
+    }
+    else if((a.completed)||(b.completed)){
+        return 1
+    }
+})
+
+console.log(' soting completed task: ',SortingTaskCompleted)
