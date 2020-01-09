@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>
+         Assignement 4
+        </title>
+        <link rel="stylesheet" href="assets/style.css">
+      
+    </head>
+    <body>
+
+     <div id="instructions">
+       <p id="Assignement"> Assignment 4 </p>
+
+        <div id="button">
+
+            Rows: <button id="row" onclick="addRow()" > Add Rows </button>
+            <button id="row" onclick="delRow()"> Remove Rows </button>
+        </div>
+        <div>
+            Columns: <button id="column" onclick="addColumn()"> Add columns </button>
+            <button id="column" onclick="delColumn()"> Remove Columns </button>
+        </div>
+
+        <div>
+            Colors:
+            <select id="choice">
+                <option value="Red" >Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Purple">Purple</option>
+                <option value="Green">Green</option>
+                <option value="Orange">Orange</option>
+                <option id="white" value="White">White</option>
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <table id="grid" >
+        </table>
+     </div> <br/><br/>
+     
+     <div id="bottombar">
+        <div id="fill">
+            <button id="fillAll" onclick="fillAll()">Fill all Cells</button>
+            <button id= "fillEmpty"onclick="fillEmpty()">Fill Empty Cells</button>
+        </div>
+
+        <div id="clear">
+            <button id="clear" onclick="clearAll()">Clear</button>
+        </div>
+    </div>
+    <script src="assets/pixel.js"></script>
+    </body>
+</html>
