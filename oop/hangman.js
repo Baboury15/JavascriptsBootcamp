@@ -16,3 +16,5 @@ const game2= new Hangman('bamako', 4)
 
 console.log(game1)
 console.log(game2)
+
+/ Adding prototype 
